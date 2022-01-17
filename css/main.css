@@ -1,0 +1,393 @@
+@charset "utf-8";
+
+@media screen and (min-width:1024px) {
+
+
+main{margin:0px auto;}                          /*메인 영역시작*/
+.slide{position:relative;}
+.slide > h2{                                    /*배너 슬라이드*/
+    display:none;
+}
+.slide img{ 
+    object-fit:cover;
+    width:100%; height:960px;
+}
+.slide .s_arrow{
+    width: 90%;
+    display:flex;
+    position:absolute;
+    top:48%; left:5%;
+    justify-content:space-between;
+}
+.slide .s_arrow img{
+    width:55px; height:55px;
+}
+.slide .s_arrow img:hover{
+    transform:scale(1.2);
+    transition:0.3s;
+}
+.s_cont ul{
+    width:100%;
+    display:flex;
+    position:relative;
+    bottom:50px;
+}
+#sec1{
+    border-bottom:1px solid black;
+}
+.t_box{                                        /*소개 텍스트*/
+    width:38%; height:410px;
+    float:left;
+    box-sizing:border-box;
+    position:relative;
+    left:80px;
+}
+.t_box > h3{
+    font-size:35px;
+    font-weight:900;
+    padding:30px 10px;
+    margin-top:45px;
+    text-indent:30px;
+}
+.t_box > .p1{
+    font-size:27px;
+    font-weight:bold;
+    padding:20px 0px 20px 60px;
+}
+.t_box > .p2{
+    font-size:18px;
+    padding:15px 30px;
+}
+.t_box > p{
+    font-size:18px;
+    padding:5px 30px;   
+    line-height:20px;
+}
+.img_box{                                       /*소개 이미지*/
+    width:50%; height:410px;
+    display:flex;
+    box-sizing:border-box;
+    position:relative;
+    left:80px;
+}
+.img_box > ul{     
+    width:100%; height:400px;                         
+    display:flex;
+    position:absolute;
+}
+.img_box > ul > li{
+    width:33%; height:400px;
+}
+
+.img01{
+    width:40%;
+    position:absolute;
+    z-index:10;
+}
+.img02{
+    width:40%;
+    position:absolute;
+    top:100px;
+    z-index:5;
+}
+.img03{
+    width:40%;
+    position:absolute;
+}
+.img_box img{
+    width:250px; height:230px;
+    position:relative;
+    top:60px;
+    border-radius:10%;
+    transition:0.3s;
+}   
+.img_box > ul > li:hover img{
+    transform:scale(1.01);
+}
+.more{
+    width:120px; height:25px;
+    float:right;
+    position:relative;
+    top:-10px; right:40px;
+    background-color:rgb(129, 86, 29);
+    text-align:center;
+    padding:7px 0px 0px 0px;
+}
+.more a{
+    font-size:13px;
+    color:rgb(236, 236, 236);
+    display:block;
+    padding:5px;
+    
+}
+.more:hover{
+    background-color:rgb(173, 170, 163);
+    border:1px solid rgb(139, 115, 47);
+}
+.more:hover a{
+    color:#333;
+}
+.t_box2{                                           /*방소개 시작*/
+    width:35%; height:300px;
+    float:left;
+    margin-top:50px;
+    text-align:center;
+}
+.t_box2 h2{
+    font-size:35px;
+    font-weight:900;
+    padding:20px 10px;
+    line-height:38px;
+}
+.span1{
+    position:relative;
+    top:-25px; left:10px;
+    font-size:22px;
+    font-weight:bold;
+}
+.t_box2 .r_p1{
+    font-size:18px;
+    width:280px;
+    display:inline-block;
+    padding:10px 0px 20px 10px;
+    margin-left:10px;
+    line-height:22px;
+    text-align:left;
+}
+.span2{
+    position:relative;
+    top:-47px; left:10px;
+    font-size:22px;
+    font-weight:bold;
+}
+.t_box2 .r_p2{
+    width:280px;
+    font-size:18px;
+    display:inline-block;
+    line-height:22px;
+    padding:10px 0px 20px 10px;
+    margin-left:20px;
+    text-align:left;
+}
+#room{position:relative;}
+.r_room{
+    width:200px;
+    text-align:center;
+    display:inline;
+    position:absolute;
+    top:-20px; left:37%;
+    font-size:34px;
+    border:2px solid rgb(80, 58, 24);
+    border-radius:50%;
+    background-color:rgb(128, 80, 18);
+    color:rgb(226, 226, 226);
+    z-index:1;
+}
+.img_box2{
+    float:left;
+    position:relative;
+    top:70px; left:40px;
+    z-index:1;
+}
+.img_box2 > ul{
+    display:flex;
+}
+.img_box2 .img1{
+    width:400px;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;  
+}
+.img_box2 .img2{
+    width:400px;
+    border-top-right-radius:10%;
+    border-bottom-right-radius:10%;
+    clear:both;
+}
+.img_inner35h{                      /*방소개 35h hover 시작*/
+    display:none;
+    width:400px;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.5);
+    padding:142px 0px;
+    position:absolute;
+    top:0%; left:0%;
+    border-top-left-radius:9%;
+    border-bottom-left-radius:9%;
+}
+.img_inner35h > li > a{
+    font-size:30px;
+    text-align:center;
+    color:#ffffffdf;
+}
+.img_inner35h img{
+    display:block;
+    width:55px;
+    margin:0px auto;
+}
+#room > .img_box2 > ul > li:hover .img_inner35h{
+    display:block;                   /*방소개 35h hover 종료*/
+}
+#room > .img_box2 > ul > li > .img_inner35h img:hover{
+    transform:scale(1.1);
+    transition:0.2s;
+}
+.img_inner35p{                       /*방소개 35p hover 시작*/
+    display:none;
+    width:400px;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.5);
+    padding:142px 0px;
+    position:absolute;
+    top:0%; left:50%; 
+    border-top-right-radius:9%;
+    border-bottom-right-radius:9%;
+}
+.img_inner35p > li > a{
+    font-size:30px; 
+    text-align:center;
+    letter-spacing:1px;
+    color:#ffffffdf;
+}
+.img_inner35p img{
+    display:block;
+    width:55px;
+    margin:0px auto;
+}
+#room > .img_box2 > ul > li:hover .img_inner35p{
+    display:block;                  
+}
+#room > .img_box2 > ul > li > .img_inner35p img:hover{
+    transform:scale(1.1);
+    transition:0.2s;
+}                                   /*방소개 35p hover 종료*/
+.txt1{
+    width:800px;
+    display:block;
+    font-size:30px;
+    font-weight:bold;
+    color:#ffffffe5;
+    text-align:center;
+    padding:20px 10px;
+    margin:0px auto;
+    position:relative;
+    top:100px;
+    line-height:30px;
+    letter-spacing:1px;
+}
+
+.r_arrow{
+    width:970px;
+    display:flex;
+    position:absolute;
+    top:180px; right:-80px;
+    justify-content:space-between;
+    z-index:-1;
+}
+.r_arrow img{
+    width:70px;
+}
+.r_arrow ul > li img{
+    display:none;
+    position:absolute;
+    top:0px;
+}
+
+.arrow > .r_arrow  > li:hover{
+    transform:scale(1.1);
+    transition:0.2s;
+
+}                      
+
+/*arrow hover*/
+.ar3{
+    background-image:url(../image/room_sub.jpg);
+    background-size:100%;
+    background-position:right;
+    margin-bottom:2px;
+}
+
+.sec3{                          /* 알파카 농장 소개 시작 */
+    background-image:url(../image/알파카단체샷.jpg);
+    background-size:100%;
+    background-position:50%;
+}
+.farm{display:flex;}            
+.farm_img{                  
+    width:68%; height:400px;
+    display:flex;
+    position:relative;
+    top:240px;
+    left:100px;
+}
+.farm_img img{
+    width:100%; height:370px;
+    border-radius:9%;
+    filter:drop-shadow(5px 10px 10px #000);
+    object-fit:cover;
+}
+.f_img1{
+    width:210px;
+    transition:0.4s;
+}
+.f_img2{
+    width:210px;
+    position:relative;
+    top:-100px;
+    transition:0.4s
+}
+.f_img3{
+    width:210px;
+    transition:0.4s;
+    
+}
+
+.farm > .farm_img > .f_img1:hover{
+    width:500px;
+}
+.farm > .farm_img > .f_img2:hover{
+    width:390px;
+}
+.farm > .farm_img > .f_img3:hover{
+    width:500px;
+}
+.farm_txt{
+    width:400px;
+    color:#ffffff;
+    padding:260px 0px;
+    text-align:center;
+    margin:auto 0px;
+    position:relative;
+    left:90px;
+}
+.farm_txt > h2{
+    font-size:35px;
+    font-weight:bold;
+    padding-bottom:50px;
+    line-height:38px;
+} 
+.farm_txt > h3{
+    font-size:25px;
+    font-weight:bold;
+    padding-bottom:30px;
+}         
+.farm_txt > p{
+    font-size:20px;
+    line-height:25px;
+}                                   /*알파카 종료*/
+                                    /* 오시는길 시작 */
+.map{position:relative;}
+.map h2{
+    width:200px;
+    font-size:30px;
+    font-weight:bold;
+    padding:60px 80px 20px 80px;
+}
+.map img{
+    width:45px;
+    position:absolute;
+    top:45px; left:240px;
+}
+.ar5 > iframe{
+    width:100%; height:400px;
+}
+}
