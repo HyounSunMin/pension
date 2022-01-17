@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+header{
+    width:100%; height:70px;
+    position:absolute;
+    background-color:#ffffff;
+    background-color:rgba(255, 255, 255, 0.7);
+    z-index:5;
+}
+.head{                                  
+    width:100%; height:74px;
+ }
+.head2{
+    width:100%; height:70px; 
+}
+.head2 > .t_menu{                               /*전체메뉴*/
+    width:5%;
+    float:left;
+    padding:10px;
+}   
+.head h1{                                       /*로고*/
+    width: 16%; height:auto;
+    display:block;
+    margin:0px auto;
+    float:left;
+    padding:15px 20px;
+    position:relative;
+    left:31%;
+    
+}
+.head h1 > a > img{                            /*로고이미지*/
+    width:100%; height:40px;
+}
+
+.menu{          
+    display:none;                               /*내비게이션*/
+    width:73%;
+    float:left;
+    font-size:17px;
+    justify-content:space-around;
+    position:relative;
+    top:10px; right:10px;
+    box-sizing:border-box;
+}
+.menu a{                                       /*내비게이션 폰트*/
+    font-weight:800;
+}
+.menu > li > a{
+    color:#444444;
+    line-height:50px;
+}
+.menu .sub{
+    display:none;                          /*서브 내비게이션*/
+    line-height:50px;
+    padding-top:10px;
+}
+.menu .sub a{
+    display:block;
+    color:#444444;
+    padding:10px 0px;
+    font-weight:550;
+}
+.sub li{
+    padding:0px 30px;
+    text-align:center;
+}
+.head .menu > li:hover .sub{
+    display:block;
+}
+.head .menu > li:hover{
+    background-color:rgba(255, 255, 255, 0.7);
+}
+.head .menu > li > .sub li:hover{
+    background-color:rgba(255, 255, 255, 0.7);
+}
+.head .menu > li > .sub li:hover a{
+    font-size:18px;
+}
+.language{                                     /*언어설정*/
+    width:7%; height:68px;
+    float:right;
+    padding:22px 6px;  
+    box-sizing:border-box;  
+    position:relative; 
+    top:5px; left:-2%;
+}
+.language a{
+    display:block;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    padding:0px 20px 0px 5px;
+    z-index:10;
+}
+.language::after{
+    content:"";
+    display:inline-block;
+    position:absolute;
+    left:38px;
+    transform:rotate(135deg);
+    width:6px; height:6px;
+    border-top:3px solid black;
+    border-right:3px solid black;
+    margin:5px 0px 0px 10px;
+    top:16px; right:15px;
+}
+
+.l_sub{
+    display:none;
+    font-size:15px;
+    text-align:center;
+    background-color:rgba(255, 255, 255, 0.7);
+    line-height:25px;
+    margin-top:20px;
+}
+.l_sub a{
+    border:1px solid black;
+}
+.head > .head2 .language > ul > li:hover .l_sub{
+    display:block;
+    bottom:200px;
+    transition:0.3s;
+}
+.head .language > ul > li > .l_sub li:hover{
+    background-color:rgba(255, 255, 255, 0.8);
+}
+}
