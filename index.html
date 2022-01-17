@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>통나무파크</title>
+    <link href="./css/reset.css" rel="stylesheet" type=text/css>
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <link href="./css/layout.css" rel="stylesheet" type="text/css">    
+    <link href="./css/header.css" rel="stylesheet" type="text/css">    
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css_t/tablet.css" rel="stylesheet" type="text/css">
+    <link href="./css_m/mobile.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" type="text/css">
+
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <style>
+        html,
+        body {
+        position: relative;
+        height: 100%;
+        }
+
+        body {
+        background: #fff;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        }
+
+        .swiper {
+        width: 100%;
+        height: 100%;
+        }
+
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+          /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        }
+  
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 950px;
+        object-fit: cover;
+        }
+      </style>
+    <script src="./js/swiper.js"></script>
+</head>
+<body>
+    <header>                             <!--헤더영역 시작-->
+       <input type="checkbox" id="toggle">
+        <div class="head">
+            <section class="head2">
+                <a href="#" title="전체메뉴"><img src="image/ham.png" alt="전체메뉴" title="전체메뉴" class="t_menu"></a>
+            
+            <label for="toggle">
+                <img src="image/ham.png" alt="전체메뉴" 
+                title="전체메뉴" class="t_menu2">
+            </label>
+            
+            <h1><a href="#" title="로고"><img src="./image/logo.png" alt="로고" title="로고"></a></h1>
+            
+            <aside><a href="#" title="맨위로이동">TOP</a></aside>
+            
+            <nav>
+                <div class="nav_screen"></div>
+                <div class="menu0"></div>
+                <div class="menu01">
+                    <h2 class="h_title">전체메뉴</h2>
+                    <label for="toggle" class="close_btn">
+                        <img src="./image/btn_close03.png" alt="닫기버튼" title="닫기버튼">
+                    </label>
+                <ul class="menu">
+                    <li><a href="#" title="소개">
+                        <label for="sub01">
+                            소개
+                            <i class="fas fa-angle-down"></i>
+                        </label></a>
+                        <input type="checkbox" id="sub01">
+                        <ul class="sub">
+                            <li><a href="#" title="펜션소개">펜션소개</a></li>
+                            <li><a href="#" title="알파카농장">알파카농장</a></li>
+                            <li><a href="#" title="부대시설">부대시설</a></li>
+                            <li><a href="#" title="오시는길">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="방">
+                        <label for="sub02">
+                            방
+                            <i class="fas fa-angle-down"></i>
+                        </label></a>
+                        <input type="checkbox" id="sub02">
+                        <ul class="sub">
+                            <li><a href="#" title="35H">35H</a></li>
+                            <li><a href="#" title="35P">35P</a></li>
+                            <li><a href="#" title="50H">50H</a></li>
+                            <li><a href="#" title="75P">75P</a></li>
+                            <li><a href="#" title="75H">75H</a></li>
+                            <li><a href="#" title="85P">85P</a></li>
+                            <li><a href="#" title="댕댕이P">댕댕이P</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="예약">
+                        <label for="sub03">
+                            예약
+                            <i class="fas fa-angle-down"></i>
+                        </label></a>
+                        <input type="checkbox" id="sub03">
+                        <ul class="sub">
+                            <li><a href="#" title="실시간예약">실시간예약</a></li>
+                            <li><a href="#" title="예약확인 및 취소">예약확인 및 취소</a></li>
+                            <li><a href="#" title="예약안내">예약안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="주변관광지">
+                        <label for="sub04">
+                            주변관광지
+                            <i class="fas fa-angle-down"></i>
+                        </label></a>
+                        <input type="checkbox" id="sub04">
+                        <ul class="sub">
+                            <li><a href="#" title="렌츠런파크">렌츠런파크</a></li>
+                            <li><a href="#" title="양뗴목장">양떼목장</a></li>
+                            <li><a href="#" title="새별오름">새별오름</a></li>
+                            <li><a href="#" title="제주공룡랜드">제주공룡랜드</a></li>
+                            <li><a href="#" title="곽지과물 해수욕장">곽지과물 해수욕장</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="커뮤니티">
+                        <label for="sub05">
+                            커뮤니티
+                            <i class="fas fa-angle-down"></i>
+                        </label></a>
+                        <input type="checkbox" id="sub05">
+                        <ul class="sub">
+                            <li><a href="#" title="공지사항">공지사항</a></li>
+                            <li><a href="#" title="문의사항">문의사항</a></li>
+                            <li><a href="#" title="펜션후기">펜션후기</a></li>
+                            <li><a href="#" title="포토갤러리">포토갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <article class="language">
+                <ul>
+                    <li><a href="#" title="언어설정">KR</a>
+                        <ul class="l_sub">
+                            <li><a href="#" title="한국어">KR</a></li>
+                            <li><a href="#" title="영어">EN</a></li>
+                            <li><a href="#" title="중국어">CHI</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            </section>
+        </div>
+    </header>                                    
+
+    <main>                                   <!--메인영역 시작-->
+        <section class="slide">
+            <h2>메인슬라이드</h2>
+                <div class="swiper-container main_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./image/배너3.jpg"></div>
+                    <div class="swiper-slide"><img src="./image/알파카단체샷2.jpg"></div>
+                    <div class="swiper-slide"><img src="./image/baner2-1.jpg"></div>
+                    <div class="swiper-slide"><img src="./image/baner3-1.jpeg"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            <div class="s_arrow">
+                <a href="#" title="전배너로이동"><img src="./image/arrow-left2.png" alt="배너이동" title="전배너로이동"></a>
+                <a href="#" title="다음배너로이동"><img src="./image/arrow2-right.png" alt="배너이동" title="다음배너로이동"></a>
+            </div>
+        </section>
+        <section id="sec1"> 
+            <article class="t_box">
+                <h3>자연스러운 여행</h3>
+                <p class="p1">통나무파크</p>
+                <p class="p2">멋진 전경, 아늑한 숙소, 싱그러운 산책로.</p>
+                <p>그날의 날씨, 계절의 변화 ,숲내음, 맑은 공기, 자연의 소리가 오롯이 느껴지는곳</p>
+                <p>독채 펜션 통나무파크에서 조용하고 안락한 분위기를 느끼며 사랑하는 가족, 친구, 연인과 함께 자연이 주는 일상의 행복을 느껴보세요.</p>
+            </article>
+            <article class="img_box">
+                <ul>
+                    <li><span class="img01">
+                        <a href="#" title="소개"><img src="./image/통나무집.jpg" alt="소개" title="소개로이동"></a>
+                        </span>
+                    </li>
+                    <li><span class="img02">
+                        <a href="#" title="소개"><img src="./image/img1.jpg" alt="소개" title="소개로이동"></a>
+                        </span>
+                    </li>
+                    <li><span class="img03">
+                        <a href="#" title="소개"><img src="./image/img2.jpg" alt="소개" title="소개로이동"></a>
+                        </span>
+                    </li>
+                </ul>
+            </article>
+            <div class="more"><a href="#" title="바로가기">펜션소개 바로가기</a></div>
+        </section>
+        
+        <section id="room">
+            <article class="t_box2">
+                <h2>자연과 함께하는 <br>통나무 펜션</h2>
+                <p><span class="span1">Cozy</span><span class=r_p1>나무향이 은은하게 풍기는 숙소에서 아늑한 하루를 보내보세요.</span></p>
+                <p><span class="span2">Rest</span><span class=r_p2>밖의 자연 내음, 객실 밖 산책로,가만히 머물기만해도 힐링되는 숙소에서 진정한 휴식을 느껴보세요.</span></p>
+            </article>
+            <article class="img_box2">
+                <div class="r_room"><span>Room</span></div>
+                <ul>
+                    <li><a href="#" title="방이미지"><img src="./image/35H.png" alt="35h방" title="35h방" class="img1"></a>
+                        <ul class="img_inner35h">
+                            <li>
+                                <a href="#" title="방소개">35P(펜션형)<br>Room<img src="./image/more.png" alt="더보기" title="더보기"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="방이미지"><img src="./image/35P.png" alt="35p방" title="35p방" class="img2"></a>
+                    <ul class="img_inner35p">
+                        <li><a href="#" title="방소개">35H(호텔형)<br>Room<img src="./image/more.png" alt="더보기" title="더보기"></a>
+                        </li>
+                    </ul>  
+                    </li>
+                </ul>
+                <div class="arrow">
+                <ul class="r_arrow">
+                <li>
+                    <a href="#" title="화살표"><img src="./image/arrow-left1.png" alt="화살표" title="전이미지"></a>
+                    <ul class=arrow_sub>
+                        <li><a href="#" title="화살표"><img src="./image/화살표-왼쪽.png" alt="화살표" title="다음이미지"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="ar_right">
+                    <a href="#" title="화살표"><img src="./image/arrow-right1.png" alt="화살표" title="화살표"></a>
+                    <ul class=arrow_sub>
+                        <li><a href="#" title="화살표"><img src="./image/화살표-오른쪽.png" alt="화살표" title="화살표"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </div>    
+        </article>
+        </section>
+        <article class="ar3">
+            <span class="txt1">LOGOPARK JEJU<br>낭만의 제주 작은숲속의 통나무집
+            </span>
+        </article>
+        <section class="sec3">
+            <article class="farm">
+                <div class="farm_txt">
+                    <h2>푸른 숲 알파카 농장<br>(DOCHIDOL RANCH)</h2>    
+                    <h3>사람, 동물, 자연이 어우러지는곳</h3>
+                    <p>사랑스러운 동물친구들과 교감하며<br>자연 속 산책로를 거니는 시간.<br>당신의 여행이 풍요로워 집니다.</p>
+                </div>
+            <div class="farm_img">
+                    <span class="f_img1">
+                        <a href="#" title="알파카농장"><img src="./image/알파카1.jpg" alt="알파카농장" title="알파카농장"></a>
+                        
+                    </span>
+                    <span class="f_img2">
+                        <a href="#" title="알파카농장"><img src="./image/알파카2.jpg" alt="알파카농장" title="알파카농장"></a>
+                    </span>
+                    <span class="f_img3">
+                        <a href="#" title="알파카농장"><img src="./image/알파카체험.jpg" alt="알파카농장" title="알파카농장"></a>
+                    </span>
+                </div>
+        </article>
+        </section>
+        <section class="map"><div><a href="#" title="오시는길"><h2>오시는길</h2><img src="image/map.png" alt="맵" title="맵"></a></div>
+        <article class="ar5"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13322.015587149943!2d126.3658825!3d33.4101049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9831baf5764e075f!2z7Ya164KY66y07YyM7YGs!5e0!3m2!1sko!2skr!4v1633620246931!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy" title="지도"></iframe></article>
+        </section>
+
+    </main>                                 
+
+    <footer>                                <!--푸터영역 시작-->
+        <section class="sec5">
+            <article class="ar6">
+                <ul>
+                    <li><a href="#" title="홈"><h4>홈</h4></a>
+                        <ul class="f_sub">
+                            <li><a href="#" title="펜션소개">펜션소개</a></li>
+                            <li><a href="#" title="알파카농장">알파카농장</a></li>
+                            <li><a href="#" title="부대시설">부대시설</a></li>
+                            <li><a href="#" title="오시는길">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="방"><h4>방</h4></a>
+                        <ul class="f_sub">
+                            <li><a href="#" title="35H">35H</a></li>
+                            <li><a href="#" title="35P">35P</a></li>
+                            <li><a href="#" title="50H">50H</a></li>
+                            <li><a href="#" title="75H">75H</a></li>
+                            <li><a href="#" title="75P">75P</a></li>
+                            <li><a href="#" title="85P">85P</a></li>
+                            <li><a href="#" title="댕댕이P">댕댕이P</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="예약"><h4>예약</h4></a>
+                        <ul class="f_sub">
+                            <li><a href="#" title="실시간예약">실시간예약</a></li>
+                            <li><a href="#" title="예약확인 및 취소">예약확인 및 취소</a></li>
+                            <li><a href="#" title="예약안내">예약안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="주변관광지"><h4>주변관광지</h4></a>
+                        <ul class="f_sub">
+                            <li><a href="#" title="렌츠런파크">렌츠런파크</a></li>
+                            <li><a href="#" title="곽지과물 해수욕장">곽지과물 해수욕장</a></li>
+                            <li><a href="#" title="양떼목장">양떼목장</a></li>
+                            <li><a href="#" title="새별오름">새별오름</a></li>
+                            <li><a href="#" title="제주 공룡랜드">제주 공룡랜드</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="커뮤니티"><h4>커뮤니티</h4></a>
+                        <ul class="f_sub">
+                            <li><a href="#" title="공지사항">공지사항</a></li>
+                            <li><a href="#" title="문의사항">문의사항</a></li>
+                            <li><a href="#" title="펜션후기">펜션후기</a></li>
+                            <li><a href="#" title="포토갤러리">포토갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article class="ar7">
+                <div>
+                <h3>T. 010 - 1234 - 5678</h3>
+                <h3>제주은행 18-00-000000</h3>
+                <p><span class="ar7_txt">FOLLOW US</span></p> <a href="#" title="sns"><img src="./image/sns3.png" alt="sns" title="sns"></a>
+                <a href="#" title="페이스북"><img src="./image/facebook3.png" alt="페이스북" title="페이스북"></a>
+                <a href="#" title="트위터"><img src="./image/twiter3.png" alt="트위터" title="트위터"></a>
+                <a href="#" title="구글"><img src="./image/google.png" alt="구글" title="구글"></a>
+                <p><span class="ar7_txt">COMPANY</span> 통나무파크 <span class="ar7_txt">OWNER</span> OOO<br>
+                    <span class="ar7_txt">BUSINESS</span> LICENSE 010-11-2222<br>
+                    <span class="ar7_txt">ADDRESS</span> 제주도 제주시 애월읍 도지들길 293<br>
+                    <span class="ar7_txt">E-MAIL</span> logoparkjeju@naver.com<br>
+                    COPYRIGHT(C)LOGO.ALL Rights reserrved
+                </p>
+            </div>
+            </article>
+            </section>
+    </footer>   
+    <script>
+        var swiper = new Swiper(".main_slide", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+        });
+      </script>                          
+</body>
+</html>
